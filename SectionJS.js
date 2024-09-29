@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", function () {
   this.setTimeout(function () {
     var video = document.getElementById("backgroundVideo");
     var videos = [
-      "/assets/vid/MainVid.mp4",
+      "MainVid.mp4",
       // Thêm tên file video khác vào đây
     ];
     var randomIndex = Math.floor(Math.random() * videos.length);
