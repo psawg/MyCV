@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="/assets/css/HomeCSS.css" />
     <link rel="stylesheet" href="/assets/css/ScrollbarCSS.css" />
     <link rel="stylesheet" href="/assets/css/IntroCSS.css" />
-
+    <link rel="stylesheet" href="/assets/css/HeaderCSS.css">
+    <link rel="stylesheet" href="/assets/css/HeaderCSS_Responsive.css">
+    <link rel="stylesheet" href="/assets/css/SectionCSS.css" />
+    <link rel="stylesheet" href="/assets/css/SectionCSS_Responsive.css" />
+    <link rel="stylesheet" href="/assets/css/FooterCSS.css" />
+    <link rel="stylesheet" href="/assets/css/FooterCSS_Responsive.css" />
   </head>
 
   <body>
@@ -16,9 +21,205 @@
       <img src="/assets/images/SectionLogo.png" alt="Logo" class="logo" />
     </div>
 
-    <div id="header"></div>
-    <div id="section"></div>
-    <div id="footer"></div>
+     <!-- NAVIGATION BAR -->
+     <div class="NavBar" id="idNavBar">
+
+       
+
+      <!-- Hamburger Menu -->
+      <div class="item-container">
+          <span class="openBtn">
+              <div href="#" class="line" onclick="openNav()"></div>
+              <div href="#" class="line" onclick="openNav()"></div>
+              <div href="#" class="line" onclick="openNav()"></div>
+          </span>
+  
+          <!-- LIST ITEM -->
+          <ul class="sideNav" id="idSideNav"> 
+              <!-- Close Button -->
+              <li class="closeBtn">
+                  <div href="#" class="line" onclick="closeNav()"></div>
+                  <div href="#" class="line" onclick="closeNav()"></div>
+                  <div href="#" class="line" onclick="closeNav()"></div>
+              </li>
+              <!-- Main Menu -->
+              <li><a onclick="test1()">About Me</a></li>
+              <li><a onclick="test2()">Contact</a></li>
+              
+          </ul>
+      </div>
+
+  </div>
+  <script src="/assets/js/headerJS.js"></script>
+  <div class="content">
+    <div class="topContent">
+      <video id="backgroundVideo" autoplay loop muted>
+        <source src="" type="video/mp4">
+      </video>
+
+    <div class="overlay">
+      <div class="mainLogo">
+        <img src="/assets/images/mypic1.jpg" alt="">
+          <div class="paragraph">
+            <p id="name">Pham Dang Phuoc Sang<br></p>
+            <p id="pa">2021 - 2026 : SaiGon University Ho Chi Minh City. <br>
+                Major : Information Technology Majoring in Software Engineering, <br>
+                currently in the fourth year of study at Saigon University.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="midContent" id="midContent">
+    <div class="Hero">
+      <!-- Marquee -->
+      <div class="marquee">
+        <p>
+          <span> EDUCATION -</span>
+          <span> EDUCATION -</span>
+          <span> EDUCATION -</span>
+          <span> EDUCATION -</span>
+          <span> EDUCATION -</span>
+          <span> EDUCATION -</span>
+          <span> EDUCATION -</span>
+          <span> EDUCATION -</span>
+
+        </p>
+      </div>
+      
+      <!-- Content -->
+      <div class="main1_content">
+        <div class="newsContent">
+          <div class="newsList">
+            <div class="newsItem">
+              <a href="#"><img src="/assets/images/logoSgu1.jpg" alt="News 1">
+              <h3>SaiGon University</h3></a>
+            </div>
+            
+            <div class="newsItem">
+              <img src="/assets/images/OIP.jpg" alt="News 2">
+              <h3>Khoa Công Nghệ Thông Tin</h3>
+            </div>
+            
+            <!-- <div class="newsItem">
+              <a href="/page/GTA_V_Page.html"><img src="/assets/images/img_news/GTA5.jpg" alt="News 3"></a>
+              <h3>Grand Theft Auto V</h3>
+            </div>
+                                    
+            <div class="newsItem">
+              <a href="/page/ARK.html"><img src="/assets/images/img_news/ARK.jpg" alt="News 4"></a>
+              <h3>ARK : Survival Evolved</h3>
+            </div>
+                                    
+            <div class="newsItem">
+              <a href="/page/RedDead_Page.html"><img src="/assets/images/img_news/RDR2.jpg" alt="News 5"></a>
+              <h3>Red Dead Dedemption 2</h3>
+            </div>
+                                    
+            <div class="newsItem">
+              <a href="/page/Cyberpunk_2077.html"><img src="/assets/images/img_news/Cyberpunk.jpg" alt="News 6"></a>
+              <h3>Cyberpunk 2077</h3>
+            </div> -->
+            <!-- Thêm các tin tức khác vào đây -->
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+                  
+  <!-- <div class="botContent" id="botContent">
+    <table>
+      <tr>
+        <td>
+          <a href="https://www.playstation.com/en-gb/games/bloodborne/">
+            <img src="/assets/images/logo_of_game/logo_bloodborne.png" alt="Image 1">
+          </a>
+        </td>
+        
+        <td>
+          <a href="https://deltarune.com/">
+            <img src="/assets/images/logo_of_game/logo_deltarune.png" alt="Image 2">
+          </a>
+        </td>
+                  
+        <td>
+          <a href="https://www.supergiantgames.com/games/hades/">
+            <img src="/assets/images/logo_of_game/logo_hades.png" alt="Image 3">
+          </a>
+        </td>
+                  
+        <td>
+          <a href="https://www.hollowknight.com/">
+            <img src="/assets/images/logo_of_game/logo_hollow_knight.png" alt="Image 4">
+          </a>
+        </td>
+      </tr>
+                
+      <tr>
+        <td>
+          <a href="https://www.monsterhunter.com/">
+            <img src="/assets/images/logo_of_game/logo_monster_hunter.png" alt="Image 5">
+          </a>
+        </td>
+                  
+        <td>
+          <a href="https://www.stardewvalley.net/">
+            <img src="/assets/images/logo_of_game/logo_stardew_valley.png" alt="Image 6">
+          </a>
+        </td>
+                  
+        <td>
+          <a href="https://stray.game/">
+            <img src="/assets/images/logo_of_game/logo_stray.png" alt="Image 7">
+          </a>
+        </td>
+                  
+        <td>
+          <a href="https://undertale.com/">
+            <img src="/assets/images/logo_of_game/logo_undertale.png" alt="Image 8">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div> -->
+  <script src="/assets/js/SectionJS.js" defer></script>
+  <div id="Footer">
+    <div id="leftFooter">
+      <div id="logoFooter">
+        <img src="/assets/images/logoSgu.png" alt="LogoHome" onclick="redirectToNewPage()"/>
+      </div>
+
+      <div id="footerContent">
+        <div id="content1">
+          <p class="about"><a onclick="test1()">ABOUT</a></p>
+        </div>
+        <div id="content2">
+          <p id="contact"><a onclick="test2()">CONTACT</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="rightFooter">
+      <div id="tag"><h2>FOLLOW ME</h2></div>
+      <div id="iconContact">
+        <ul id="content4">
+          <li> <a href="https://www.facebook.com/Psawgg"><img src="/assets/images/icon_facebook.png" alt="" /></a></li>
+          <li><a href="https://www.instagram.com/jisawndangec/"><img src="/assets/images/icon_instagram.png" alt="" /></a></li>
+          <li><a href="https://www.youtube.com/@gypsyjourneys5123"><img src="/assets/images/icon_youtube.png" alt="" /></a></li>
+        </ul>
+        <ul id="content5">
+          <li><a href="https://discord.gg/6gaPgcuc"><img src="/assets/images/icon_discord.png" alt="" /></a></li>
+          <li><a href="https://www.tiktok.com/@pisawn"><img src="/assets/images/icon_tiktok.png" alt="" /></a></li>
+          <li><a href="#"><img src="/assets/images/phoneCall.png" alt="" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyrightFooter">
+    <div id="content3"><h6>© 2024, PiSawn</h6></div>
+  </div>
+  <script src="/assets/js/FooterJS.js"></script>
 
 
 
